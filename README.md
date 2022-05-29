@@ -3,7 +3,7 @@
 ## Instalation:
 
 
-For the instalation make sure you install SDL2, SDL2 Image and sdl2_ttf.
+For the instalation make sure you install SDL2 and SDL2 Image.
 The go into the folder and execute this command:
 ```
 make .PHONY
