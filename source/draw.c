@@ -44,3 +44,12 @@ void drawEntity(Win *app, Entity *entity)
     SDL_RenderCopy(app->renderer, entity->texture, NULL, &dest);
 }
 
+void definePlayer(Entity *player, Win *app)
+{
+    player->pos_x = 100;
+    player->pos_y = 100;
+    player->width = 22;
+    player->height = 16;
+    player->texture = loadTexture(app, "ressource/player.png");
+    player->speed = 0;
+}

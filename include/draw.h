@@ -14,11 +14,16 @@ typedef struct
     int speed;
 } Entity;
 
+typedef struct
+{
+    int isPause;
+} Env;
+
 void prepareCanvas(Win *app);
 void presentCanvas(Win *app);
 void drawBackGround(Win *app, int gameOver);
 SDL_Texture *loadTexture(Win *app, char *img_path);
 void drawEntity(Win *app, Entity *entity);
-
+void definePlayer(Entity *player, Win *app);
 
 #endif /* !DRAW */

@@ -22,6 +22,7 @@ int checkColision(Entity *player, Entity *enemy) {
     playerHitBox.y = player->pos_y;
     playerHitBox.w = player->width;
     playerHitBox.h = player->height;
+
     enemyHitBox.x = enemy->pos_x;
     enemyHitBox.y = enemy->pos_y;
     enemyHitBox.w = enemy->width;
@@ -34,4 +35,14 @@ int checkColision(Entity *player, Entity *enemy) {
         return 0;
     }
     
+}
+
+void defineEnemy(Entity *enemy, Win *app)
+{
+    enemy->pos_x = WINDOW_WIDTH;
+    enemy->pos_y = (rand() % (WINDOW_HEIGHT - 0 + 1)) + 0;
+    enemy->width = 22;
+    enemy->height = 16;
+    enemy->texture = loadTexture(app, "ressource/obs.png");
+    enemy->speed = (rand() % (10 - 3 + 1)) + 3;
 }

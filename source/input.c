@@ -2,7 +2,7 @@
 #include "window.h"
 
 
-int input_handler(Entity *entity) {
+int input_handler(Entity *entity, Env *env) {
     SDL_Event event;
 
     SDL_PollEvent(&event);
@@ -42,6 +42,14 @@ int input_handler(Entity *entity) {
                         entity->pos_x -= 8;
                     }
                     break;
+                    
+                case SDLK_ESCAPE:
+                    
+                    if (env->isPause == 0){
+                        env->isPause = 1;
+                    } else {
+                        env->isPause = 0;
+                    }
                     
 
                 default:
