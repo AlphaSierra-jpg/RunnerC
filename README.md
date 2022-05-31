@@ -21,7 +21,7 @@ make .PHONY
 
 -   After doing what is requested above enter this command:
 ```
-./lunchGame
+./SpaceEscaper
 ```
 
 Now the game is started
