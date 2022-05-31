@@ -1,6 +1,6 @@
 CC = clang
 
-NAME	=	lunchGame
+NAME	=	SpaceEscaper
 
 SRC		=	source/main.c\
 			source/draw.c\

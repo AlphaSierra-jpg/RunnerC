@@ -15,13 +15,39 @@ int input_handler(Entity *entity, Env *env) {
         case SDL_KEYDOWN:
 
             switch (event.key.keysym.sym) {
+                case SDLK_z:
+                    if (entity->pos_y - 17 > 0){
+                        entity->pos_y -= 17;
+                    }
+                    break;
+                
+                case SDLK_s:
+                    if (entity->pos_y + 17 + entity->height < WINDOW_HEIGHT){
+                        entity->pos_y += 17;
+                    }
+                    break;
+                    
+
+                case SDLK_d:
+                    if (entity->pos_x + 8 + entity->height < WINDOW_WIDTH){
+                        entity->pos_x += 8;
+                    }
+                    break;
+                    
+
+                case SDLK_q:
+
+                    if (entity->pos_x - 8 > 0){
+                        entity->pos_x -= 8;
+                    }
+                    break;
+                
                 case SDLK_UP:
                     if (entity->pos_y - 17 > 0){
                         entity->pos_y -= 17;
                     }
-                    
                     break;
-
+                
                 case SDLK_DOWN:
                     if (entity->pos_y + 17 + entity->height < WINDOW_HEIGHT){
                         entity->pos_y += 17;
@@ -43,6 +69,8 @@ int input_handler(Entity *entity, Env *env) {
                     }
                     break;
                     
+
+                    
                 case SDLK_ESCAPE:
                     
                     if (env->isPause == 0){
@@ -50,8 +78,7 @@ int input_handler(Entity *entity, Env *env) {
                     } else {
                         env->isPause = 0;
                     }
-                    
-
+                
                 default:
                     break;
             }

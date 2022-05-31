@@ -1,19 +1,30 @@
-# The revenge of aliens
+# The Revenge Of Aliens
 
-## Instalation:
+<Welcome to The Revenge Of Aliens>
 
+-   Welcome to Alien Revenge, this time the aliens are attacking us by sending meteorites! 
+We need your help for Timmy to survive these waves, can you help him to avoid this? 
+Will you be up to the task? That's what we'll see!
 
-For the instalation make sure you install SDL2 and SDL2 Image.
-The go into the folder and execute this command:
+## Installation:
+
+**Step 1**
+
+-   For the installation make sure you install SDL2, SDL2 Image and sdl2_ttf.
+-   The go into the folder and execute this command:
+
 ```
-make .PHONY
+    make .PHONY
+
 ```
 
-Then this command:
+**Step2**
+
+-   After doing what is requested above enter this command:
 ```
 ./lunchGame
 ```
 
-And the game is started
+Now the game is started
 
-Nice game!!!
+Enjoy and have a nice game !! :D

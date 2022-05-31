@@ -21,7 +21,7 @@ int main()
     if (initSDL(app) < 0)
     {
         return -1;
-    }
+    }   
 
     env->isPause = 0;
 
@@ -57,11 +57,13 @@ int main()
         presentCanvas(app);
         SDL_Delay(16);
     };
-
+    prepareCanvas(app);
+    
     drawBackGround(app, gameOver);
 
     presentCanvas(app);
     SDL_Delay(3000);
+
     return 0;
 }
 
