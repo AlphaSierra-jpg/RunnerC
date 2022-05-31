@@ -14,7 +14,7 @@ Will you be up to the task? That's what we'll see!
 -   The go into the folder and execute this command:
 
 ```
-    make .PHONY
+make .PHONY
 ```
 
 **Step2**
