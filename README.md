@@ -15,7 +15,6 @@ Will you be up to the task? That's what we'll see!
 
 ```
     make .PHONY
-
 ```
 
 **Step2**
